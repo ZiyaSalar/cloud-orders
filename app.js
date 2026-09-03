@@ -1,7 +1,7 @@
 const http = require("http");
 
 const port = process.env.PORT || 8080;
-const version = process.env.APP_VERSION || "1.0.0";
+const version = process.env.APP_VERSION || "2.0.0";
 const environment = process.env.APP_ENV || "cloud";
 
 const orders = [
@@ -47,7 +47,7 @@ const server = http.createServer((request, response) => {
     response.writeHead(200);
     response.end(
       JSON.stringify({
-        message: "Welcome to Cloud Orders",
+        message: "Welcome to Cloud Orders Version 2",
         endpoints: ["/health", "/api/orders"],
         version
       })
