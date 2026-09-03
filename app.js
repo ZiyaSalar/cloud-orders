@@ -18,7 +18,14 @@ const orders = [
     amount: 2800,
     status: "CREATED",
     city: "Mysuru"
-  }
+  },
+  { 
+  id: "order-1003", 
+  customerId: "cust-03", 
+  amount: 7200, 
+  status: "SHIPPED", 
+  city: "Hubballi" 
+  },
 ];
 
 const server = http.createServer((request, response) => {
